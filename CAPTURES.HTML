@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>photography</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+    <div class="menu">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <ion-icon name="grid-outline"></ion-icon>
+        </label>
+        <label class="logo">PHOTOGRAPHYWORLD</label>
+    
+        <ul>
+          <li><a href="home.html" class="active">HOME</a></li>
+          <li><a href="collection.html" class="active">COLLECTION</a></li>
+          <li><a href="CAPTURES.HTML" class="active">CAPTURES</a></li>
+          <li><a href="REVIWES.HTML" class="active">REVIWES</a></li>
+        </ul>
+      </nav>
+    </div>
+	<style>
+		/* Applying Global CSS */
+	* {
+	  margin: 0;
+	  padding: 0;
+	  box-sizing: border-box;
+	}
+	
+	/* Centering the content of whole body */
+	body {
+	 
+	  justify-content: center;
+	  align-items: center;
+	  min-height: 100vh;
+	  background: #000;
+	}
+	
+	/* Adding transform-style CSS 
+	property to the boxes */
+	.box {
+	  position: relative;
+	  width: 200px;
+	  height: 200px;
+	  transform-style: preserve-3d;
+	  animation: animate 20s linear infinite;
+	}
+	
+	/* Adding keyframes for animation */
+	@keyframes animate {
+	  0% {
+	  transform: perspective(1000px) rotateY(0deg);
+	  }
+	  100% {
+	  transform: perspective(1000px) rotateY(360deg);
+	  }
+	}
+	
+	/* Adding CSS to all the span 
+	tags for animation */
+	.box span {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  transform-origin: center;
+	  transform-style: preserve-3d;
+	  transform:
+	rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+	  -webkit-box-reflect: 
+	below 0px linear-gradient(transparent, transparent, #0004);
+	}
+	
+	/* Adding object-fit CSS 
+	property to all the images */
+	.box span img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 250px;
+	  width: 300px;
+	  object-fit: cover;
+	}    
+	</style>
+		<body>
+			<div class="box">
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 1;">
+					<img src=
+	"images/cm.jpg" />
+				</span>
+	
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 2;">
+					<img src=
+	"images/cm2.jpg" />
+				</span>
+	
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 4;">
+					<img src=
+	"images/cm3.jpg" />
+				</span>
+	
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 5;">
+					<img src=
+	"images/cm4.jpg" />
+				</span>
+	
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 6;">
+					<img src=
+	"images/cm5.jpg" />
+				</span>
+	
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 7;">
+					<img src=
+	"images/cm6.jpg" />
+				</span>
+	
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 8;">
+					<img src=
+	"images/cm7.jpg" />
+				</span>
+	
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 9;">
+					<img src=
+	"images/cm8.jpg" />
+				</span>
+	
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 3;">
+					<img src=
+	"images/cm9.jpg" />
+				</span>
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 3;">
+					<img src=
+	"images/cm10.jpg" />
+				</span>
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 3;">
+					<img src=
+	"images/cm11.jpg" />
+				</span>
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 3;">
+					<img src=
+	"images/cm12.jpg" />
+				</span>
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 3;">
+					<img src=
+	"images/cm13.jpg" />
+				</span>
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 3;">
+					<img src=
+	"images/cm14.jpg" />
+				</span>
+				<!-- Adding CSS variable --i -->
+				<span style="--i: 3;">
+					<img src=
+	"images/cm15.jpg" />
+				</span>
+			</div>
+		</body>
