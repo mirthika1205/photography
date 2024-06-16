@@ -1,0 +1,441 @@
+  :root {
+  --clr-primary: #fe5722;
+  --clr-secondary: #272d36;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+h2{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+	font-style: italic;
+	font-weight: 400;
+}
+body {
+  font-family: Arial;
+  margin: 0 auto; /* Center website */
+  overflow-x: hidden;
+
+  /* padding: hidden; */
+  background-color:rgb(159, 240, 213);
+}
+
+
+
+/* Menu */
+nav {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #fff5f2;
+    box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.22);
+    z-index: 22;
+  }
+  
+  label.logo {
+    font-size: 1.6rem;
+    font-family: "Titillium Web", sans-serif;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: 500;
+  }
+  
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  nav ul li a {
+    font-size: 18px;
+    padding: 7px 13px;
+    text-decoration: none;
+    color: var(--clr-secondary);
+  }
+  
+  .menu a.active,
+  .menu a:hover {
+    border-bottom: 2px solid var(--clr-primary);
+    transition: 0.3s;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  /* End Menu */
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: transparent;
+  gap: 10px;
+  /* padding: 10px; */
+}
+.grid-item {
+  background-color: transparent;
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+}
+.grid-item  img {
+  width: 100%;
+}
+.max-width{
+  max-width: 800px;
+  margin: 7rem auto auto;
+  /* margin: 0 auto; */
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+.menu a.active,
+.menu a:hover {
+  border-bottom: 2px solid var(--clr-primary);
+  transition: 0.3s;
+}
+
+.section {
+  width: 100%;
+  padding: 40px 0;
+}
+/* FAQ */
+#faq .secondary {
+  text-align: center;
+}
+
+#faq {
+  width: 100%;
+  margin: 50px auto 20px auto;
+}
+
+/* Form css */
+
+form {
+  /* max-width: 300px; */
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+form button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color:var(--clr-primary);
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+/* label {
+  display: block;
+  margin-bottom: 8px;
+} */
+
+label.logo {
+    font-size: 1.6rem;
+    font-family: "Titillium Web", sans-serif;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: 500;
+  }
+  .primaryClr{ 
+    color: var(--clr-primary);
+  }
+
+  
+
+@media (max-width: 952px) {
+    label.logo {
+      font-size: 30px;
+      padding-left: 20px;
+    }
+  
+    nav ul li a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 858px) {
+    .checkbtn {
+      display: block;
+      color: var(--clr-primary);
+    }
+  
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 80px;
+      left: -100%;
+      top: 80px;
+      transition: all 0.5s;
+      text-align: center;
+      background: #fff5f2;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+  
+    nav ul li a {
+      font-size: 20px;
+    }
+  
+    .menu a:hover,
+    .menu a.active {
+      background: none;
+      color: var(--clr-primary);
+    }
+  
+    #check:checked ~ ul {
+      left: 0;
+    }
+  
+    #hero-section {
+      margin-top: 80px;
+    }
+  
+    #hero-section .text {
+      margin-left: auto;
+    }
+  
+    .flex {
+      flex-direction: column;
+    }
+  
+    .visual,
+    .text {
+      width: 70%;
+      margin: 15px auto;
+      text-align: center;
+    }
+  
+    .download,
+    .user {
+      flex-direction: row;
+    }
+  
+    .user {
+      justify-content: center;
+    }
+  
+    .visual img {
+      margin: 0 auto;
+    }
+  
+    .box {
+      margin: 15px 0;
+    }
+  
+    .restaurant-menu {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+  
+    .faq,
+    .menu-item {
+      width: 80%;
+    }
+  
+    .primary {
+      font-size: 56px;
+    }
+    .primary span {
+      font-size: 56px;
+      color: var(--clr-primary);
+    }
+    .secondary {
+      font-size: 40px;
+    }
+  
+    .tertiary {
+      font-size: 20px;
+    }
+  
+    .footer-about {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .quick-links,
+    .get-in-touch,
+    .footer-category {
+      display: none;
+    }
+    .grid-container {
+        margin: 2rem;
+    }
+    .review-box {
+        padding: 2rem;
+    }
+  }
+  
+  @media (max-width: 680px) {
+    .container {
+      padding: 0 10px;
+    }
+  
+    .text,
+    .visual {
+      width: 90%;
+    }
+  
+    .restaurant-menu {
+      grid-template-columns: 1fr;
+    }
+  
+    .faq {
+      width: 90%;
+    }
+  .name {
+    line-height:0.7rem; 
+  }
+    .app-store {
+      margin: 10px 0;
+    }
+  
+    .download {
+      flex-direction: column;
+    }
+  
+    .primary {
+      font-size: 20px;
+      line-height: 2rem;
+    }
+    .primary span{
+      font-size: 20px;
+      line-height: 2rem;
+    }
+  
+    .secondary {
+      font-size: 32px;
+    }
+  
+    .tertiary {
+      font-size: 17px;
+    }
+    
+  .title {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 8px 0;
+  }
+  
+  .location {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  }
+  /* End Re
